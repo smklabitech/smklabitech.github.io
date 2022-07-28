@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMK Lab I-Tech | Selamat Tahun Baru Islam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+      .blue{
+        background:transparent;
+        color: white;
+        transition: .5s;
+        margin-top: 10px;
+
+      }
+      .top{
+        margin-top: 0;
+        transition: .5s;
+        position: fixed;
+        background-color: #4A2B73;
+      }
+     .navbar-brand{
+      margin-left: 80px;
+     } 
+     .nav-link{
+      margin-right: 25px;
+     }
+     .navbar-nav{
+      margin-left: 150px;
+     }
+     .lead {
+      padding-left: 80px;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top blue" id="Nav">
+      <div class="container">
+        <a class="navbar-brand h1 mt-2" href="#"> 
+          <img src="logo.png" class="img-home" width="60" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border: none;">
+          <i class='bx bx-menu'></i>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-pills">
+            <a class="nav-link " aria-current="page" href="#" style="color: white;">Home</a>
+            <a class="nav-link" href="#" style="color: white;">Content</a>
+            <a class="nav-link" href="#" style="color: white;">Dakwah</a>
+            <a class="nav-link" href="#" style="color: white;">Project</a>
+            <button href="#" style="width: 70px; border: none;border-radius: 7px; background-color: #EA5986; color: white;" onclick="window.location.href='login.html'" class="button-home">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid"style="height: 900px;  background-image: url('bg.png'); background-size: cover; " >
+      <div class="container" style="color: black; left: 0; ">
+            <h1 class="display-6" style="padding-top: 170px; font-weight: bold; margin-bottom: 20px; color: white; padding-left: 80px;">Memperingati<br> Hari Besar Islam 1444 H</h1>
+            <p class="lead" style="color: white; font-family: serif;">
+              Kami SMK LAB I-Tech Mengucapkan <br>selamat tahun baru Islam <br> 1444 H <br>
+              <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href=''" >Read More <i class='bx bx-chevron-down'></i></button>
+            </p>
+            
+         
+      </div>
+    </div>
+    <div class="content" id="content">
+      <div class="container" align="center">
+        <h3 style="color: #452D6B; font-weight: bold;">Apa Itu Tahun Baru Islam <br>1444 H</h3>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+            console.log(scroll)
+            if (scroll >= 20) {
+              $("#Nav").removeClass("blue");
+              $("#Nav").addClass("top");
+            }else{
+              $("#Nav").removeClass("top");
+              $("#Nav").addClass("blue");
+            }
+      });
+    </script>
+  </body>
+</html>
