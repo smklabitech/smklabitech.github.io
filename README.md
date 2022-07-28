@@ -1,1 +1,0 @@
-# smklabitech.github.io
