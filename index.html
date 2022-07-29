@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
       .blue{
         background:transparent;
@@ -22,16 +23,41 @@
         background-color: #4A2B73;
       }
      .navbar-brand{
-      margin-left: 80px;
-     } 
-     .nav-link{
-      margin-right: 25px;
-     }
-     .navbar-nav{
-      margin-left: 150px;
-     }
-     .lead {
-      padding-left: 80px;
+        margin-left: 80px;
+       } 
+     @media (min-width: 1000px) {
+        .jumbotron{
+        height: 900px;  background-image: url('background.png'); background-size: cover; 
+       }
+       .display-6{
+        padding-top: 270px; font-weight: bold; margin-bottom: 20px; color: #4A2B73; padding-left: 80px;
+       }
+       .lead{
+          color: #4A2B73; font-family: serif;
+       }
+
+       .nav-link{
+        margin-right: 25px;
+       }
+       .navbar-nav{
+        margin-left: 150px;
+       }
+       .lead {
+        padding-left: 80px;
+       }
+       .content-quetion{
+        height: 500px; background-color: #1B0723;
+       }
+       .video-dakwah{
+        width: 700px;
+        height: 409;
+        border-radius: 5px;
+       }
+       .project-img{
+        width: 450px;
+        height: 200px;
+        border-radius: 5px;
+       }
      }
      
     </style>
@@ -51,16 +77,16 @@
             <a class="nav-link" href="#content" style="color: white;">Content</a>
             <a class="nav-link" href="#dakwah" style="color: white;">Dakwah</a>
             <a class="nav-link" href="#project" style="color: white;">Project</a>
-            <button  style="width: 70px; border: none;border-radius: 7px; background-color: #EA5986; color: white;" onclick="window.location.href='#'" class="button-home">Login</button>
+            <button href="#" style="width: 70px; border: none;border-radius: 7px; background-color: #EA5986; color: white;" onclick="window.location.href='login.html'" class="button-home">Login</button>
           </div>
         </div>
       </div>
     </nav>
     
-    <div class="jumbotron jumbotron-fluid"style="height: 900px;  background-image: url('background.png'); background-size: cover; " >
+    <div class="jumbotron jumbotron-fluid">
       <div class="container" style="color:#4A2B73; left: 0; " >
-            <h1 class="display-6" style="padding-top: 270px; font-weight: bold; margin-bottom: 20px; color: #4A2B73; padding-left: 80px;" data-aos="zoom-out">Memperingati<br> Hari Besar Islam 1444 H</h1>
-            <p class="lead" style="color: #4A2B73; font-family: serif;" data-aos="zoom-out">
+            <h1 class="display-6" style="" data-aos="zoom-out">Memperingati<br> Hari Besar Islam 1444 H</h1>
+            <p class="lead" style="" data-aos="zoom-out">
               Kami SMK LAB I-Tech Mengucapkan <br>selamat tahun baru Islam <br> 1444 H <br>
               <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href=''" >Read More <i class='bx bx-chevron-down'></i></button>
             </p>
@@ -73,7 +99,7 @@
         <h3 class="mb-5" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Apa Itu Tahun Baru Islam <br>1444 H</h3>
         <div class="row g-3">
           <div class="col-lg-6" data-aos="zoom-out">
-              <img src="content.png">
+              <img src="content.png" class="img-content">
           </div>
           <div class="col-lg-6 mt-5" data-aos="zoom-out">
             <div class="card mt-5" style="border: none;">
@@ -87,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="content-quetion" style="height: 500px; background-color: #1B0723;">
+    <div class="content-quetion" style="">
       <div class="container mt-5">
          <h3 class="mb-5 mt-5" align="center" style="color: white; font-weight: bold; padding-top: 120px;">Apa yg harus kita lakukan<br> di tahun baru ini?</h3>
          <div class="row g-3">
@@ -123,7 +149,7 @@
     <div class="dakwah" id="dakwah">
       <div class="container" align="center">
          <h3 class="mb-3 mt-5" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Ceramah Tentang Tahun baru<br>Islam 1444 H</h3>
-        <video width="700" height="409" id="videoPlayer" controls="controls" style="border-radius: 5px; ">
+        <video class="video-dakwah"  id="videoPlayer" controls="controls">
           <source src="video.mp4" type="video/mp4">
         </video>
       </div>
@@ -137,12 +163,12 @@
               <div class="card-body">
                 <h4 class="card-title" style="font-weight: bold; color:#452D6B; ">Sistem Laundry</h4>
                 <p class="card-text" style="color:#452D6B;">Project Yg kami buat sistem laundry, mungkin tidak seberapa tapi bisa berguna jika seseorang membutuhkan</p>
-                <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href='https://id.wikipedia.org/wiki/Tahun_Baru_Hijriah'" >Project</button>
+                <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href=''" >Project</button>
               </div>
             </div>
           </div>
           <div class="col-lg-6 mt-5" data-aos="zoom-out">
-              <img src="project.png" width="450" height="200" style="border-radius: 5px;">
+              <img src="project.png" class="project-img">
           </div>
         </div>
       </div>
