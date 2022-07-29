@@ -27,10 +27,10 @@
 }
 @media (max-width: 768px) {
 	.jumbotron{
-		width: 110%;
+		width: 100%;
 	}
 	.content-quetion{
-        height: 700px; background-color: #1B0723;width: 110%;
+        height: 700px; background-color: #1B0723;width: 100%;
        }
 }
 @media (max-width: 576px) {
@@ -62,10 +62,17 @@
     .img-home{
     	margin-left: -60px;
     }
-    .bx-menu{
-    	margin-left: -120px;
-    }
+
+    
     .content-quetion{
+        height: 800px; background-color: #1B0723;width: 100%;
+       }
+}
+@media (max-width: 394px) {
+	.jumbotron{
+		width: 110%;
+	}
+	.content-quetion{
         height: 800px; background-color: #1B0723;width: 110%;
        }
 }
