@@ -76,3 +76,11 @@
         height: 800px; background-color: #1B0723;width: 110%;
        }
 }
+@media (max-width: 361px) {
+	.jumbotron{
+		width: 120%;
+	}
+	.content-quetion{
+        height: 800px; background-color: #1B0723;width: 120%;
+       }
+}
