@@ -1,0 +1,71 @@
+
+
+@media (max-width: 992px) { 
+	.navbar-nav{
+      margin-left: 80px;
+     }
+	.jumbotron{
+		background-image: none;
+		background-color: #4A2B73;
+		height: 500px;
+
+	}
+	.display-6{
+		color: white;padding-left: 80px;font-weight: bold;padding-top: 200px;
+	}
+	.lead{
+		color: white;padding-left: 80px;
+	}
+	.content-quetion{
+        height: 700px; background-color: #1B0723;
+       }
+    .video-dakwah{
+        width: 700px;
+        height: 409;
+        border-radius: 5px;
+       }
+}
+@media (max-width: 768px) {
+	.jumbotron{
+		width: 110%;
+	}
+	.content-quetion{
+        height: 700px; background-color: #1B0723;width: 110%;
+       }
+}
+@media (max-width: 576px) {
+	.navbar-nav{
+      margin-left: 20px;
+     }
+	.jumbotron{
+		height: 700px;
+	}
+	.display-6{
+		padding-left: 20px;
+	}
+	.lead{
+		padding-left: 20px;
+	}
+	.img-content{
+		width: 400px;
+		margin-bottom: 10px;
+	}
+	.video-dakwah{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .project-img{
+        width: 350px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    .img-home{
+    	margin-left: -60px;
+    }
+    .bx-menu{
+    	margin-left: -120px;
+    }
+    .content-quetion{
+        height: 800px; background-color: #1B0723;width: 110%;
+       }
+}
