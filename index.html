@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMK Lab I-Tech | Selamat Tahun Baru Islam</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
+
       .blue{
         background:transparent;
         color: white;
         transition: .5s;
-        margin-top: 10px;
+        margin-top: 30px;
 
       }
       .top{
@@ -22,44 +24,60 @@
         position: fixed;
         background-color: #4A2B73;
       }
-     .navbar-brand{
-        margin-left: 80px;
-       } 
-     @media (min-width: 1000px) {
-        .jumbotron{
-        height: 900px;  background-image: url('background.png'); background-size: cover; 
-       }
-       .display-6{
-        padding-top: 270px; font-weight: bold; margin-bottom: 20px; color: #4A2B73; padding-left: 80px;
-       }
-       .lead{
-          color: #4A2B73; font-family: serif;
-       }
+      a{
+        margin-right: 3px;
 
-       .nav-link{
-        margin-right: 25px;
-       }
-       .navbar-nav{
-        margin-left: 150px;
-       }
-       .lead {
-        padding-left: 80px;
-       }
-       .content-quetion{
-        height: 500px; background-color: #1B0723;
-       }
-       .video-dakwah{
-        width: 700px;
-        height: 409;
-        border-radius: 5px;
-       }
-       .project-img{
-        width: 450px;
-        height: 200px;
-        border-radius: 5px;
-       }
-     }
-     
+      }
+      @media (min-width: 1000px) {
+        .jumbotron{
+        height: 900px;  background-image: url('background.png'); background-size: cover;
+        width: 100%;
+      } 
+        .display-6{
+        padding-top: 270px; font-weight: bold; margin-bottom: 20px; color: #4A2B73; padding-left: 80px;
+         }
+         .nav-link{
+          margin-right: 25px;
+         }
+         .navbar-nav{
+          margin-left: 150px;
+         }
+         .lead{
+          padding-left: 80px;
+         }
+         .navbar-brand{
+          padding-left: 80px;
+         }
+         .card-about{
+            margin-top: 100px;
+         }
+         .content-quetion{
+          height: 500px; background-color: #1B0723;
+          }
+        .video-dakwah{
+          width: 700px;
+          height: 409px;
+          border-radius: 5px;
+         }
+         .project-title{
+          text-align: center;
+          padding-top: 120px;
+          margin-bottom: 100px;
+         }
+         .project-img{
+          width: 450px;
+          height: 200px;
+          border-radius: 5px;
+         }
+         .card-project{
+          margin-top: 50px;
+         }
+         .button-toggle{
+            display: none;
+         }
+      }
+      
+
     </style>
   </head>
   <body>
@@ -68,7 +86,7 @@
         <a class="navbar-brand h1 mt-2" href="#"> 
           <img src="logo.png" class="img-home" width="60" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border: none;">
+        <button class="button-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border: none;background-color: transparent; font-size: 1.1rem;">
           <i class='bx bx-menu'></i>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -82,27 +100,24 @@
         </div>
       </div>
     </nav>
-    
-    <div class="jumbotron jumbotron-fluid">
+     <div class="jumbotron jumbotron-fluid">
       <div class="container" style="color:#4A2B73; left: 0; " >
-            <h1 class="display-6" style="" data-aos="zoom-out">Memperingati<br> Hari Besar Islam 1444 H</h1>
-            <p class="lead" style="" data-aos="zoom-out">
+            <h1 class="display-6" data-aos="zoom-in">Memperingati<br> Hari Besar Islam 1444 H</h1>
+            <p class="lead" style="" data-aos="zoom-in">
               Kami SMK LAB I-Tech Mengucapkan <br>selamat tahun baru Islam <br> 1444 H <br>
-              <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href=''" >Read More <i class='bx bx-chevron-down'></i></button>
+              <button class="ml-5" href="#" style="width: 135px; border: none;border-radius: 7px; background-color: #EA5986; color: white;height: 40px;" onclick="window.location.href='#content'" >Read More <i class='bx bx-chevron-down'></i></button>
             </p>
-            
-         
       </div>
     </div>
-    <div class="content mt-5" id="content">
+    <div class="content mt-5" >
       <div class="container">
-        <h3 class="mb-5" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Apa Itu Tahun Baru Islam <br>1444 H</h3>
+        <h3 class="mb-5"id="content" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Apa Itu Tahun Baru Islam <br>1444 H</h3>
         <div class="row g-3">
-          <div class="col-lg-6" data-aos="zoom-out">
+          <div class="col-lg-6" data-aos="zoom-in">
               <img src="content.png" class="img-content">
           </div>
-          <div class="col-lg-6 mt-5" data-aos="zoom-out">
-            <div class="card mt-5" style="border: none;">
+          <div class="col-lg-6" data-aos="zoom-in">
+            <div class="card card-about" style="border: none;">
               <div class="card-body">
                 <h4 class="card-title" style="font-weight: bold; color:#452D6B; ">1 Muharram 1444 H </h4>
                 <p class="card-text" style="color:#452D6B;">Tahun Baru Hijriah atau Tahun Baru Islam merupakan suatu hari yang penting bagi umat Islam karena menandai peristiwa penting yang terjadi dalam sejarah Islam yaitu memperingati penghijrahan Nabi Muhammad SAW. dari Kota Makkah ke Madinah pada tahun 622 Masehi.</p>
@@ -146,20 +161,21 @@
          </div>
       </div>
     </div>
-    <div class="dakwah" id="dakwah">
+    <div class="dakwah">
       <div class="container" align="center">
-         <h3 class="mb-3 mt-5" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Ceramah Tentang Tahun baru<br>Islam 1444 H</h3>
+         <h3 class="mb-3 mt-5"id="dakwah" align="center" style="color: #452D6B; font-weight: bold;" data-aos="fade-down">Ceramah Tentang Tahun baru<br>Islam 1444 H</h3>
         <video class="video-dakwah"  id="videoPlayer" controls="controls">
           <source src="video.mp4" type="video/mp4">
         </video>
       </div>
     </div>
-    <div class="project mt-5" id="project">
+
+    <div class="project mt-5">
       <div class="container">
-        <h3 class="mb-3 mt-5"data-aos="fade-down" align="center" style="color: #452D6B; font-weight: bold; padding-top: 120px;">Project</h3>
+        <h3 class=" mt-5 project-title"data-aos="fade-down" style="color: #452D6B; font-weight: bold;"id="project">Project</h3>
         <div class="row g-3">
-          <div class="col-lg-6 mt-5"data-aos="zoom-out">
-            <div class="card mt-5" style="border: none;">
+          <div class="col-lg-6"data-aos="zoom-in">
+            <div class="card card-project" style="border: none;">
               <div class="card-body">
                 <h4 class="card-title" style="font-weight: bold; color:#452D6B; ">Sistem Laundry</h4>
                 <p class="card-text" style="color:#452D6B;">Project Yg kami buat sistem laundry, mungkin tidak seberapa tapi bisa berguna jika seseorang membutuhkan</p>
@@ -167,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mt-5" data-aos="zoom-out">
+          <div class="col-lg-6 mt-5" data-aos="zoom-in">
               <img src="project.png" class="project-img">
           </div>
         </div>
@@ -177,22 +193,22 @@
       <p align="center">Copyright <i class="bx bx-copyright"></i> 2022 • All rights reserved • Created with <i class="bx bxs-heart" style="color:red;"></i> By Kelompok 2 RPL</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
-      
+      AOS.init();
       $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-            console.log(scroll)
-            if (scroll >= 20) {
-              $("#Nav").removeClass("blue");
-              $("#Nav").addClass("top");
-            }else{
-              $("#Nav").removeClass("top");
-              $("#Nav").addClass("blue");
-            }
+        console.log(scroll)
+
+        if (scroll >= 20) {
+          $("#Nav").removeClass("blue");
+          $("#Nav").addClass("top");
+        }else{
+          $("#Nav").removeClass("top");
+          $("#Nav").addClass("blue");
+        }
       });
-      AOS.init();
     </script>
   </body>
 </html>
